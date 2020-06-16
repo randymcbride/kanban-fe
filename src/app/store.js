@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import columns from "../features/column/columnSlice";
+import cards from "../features/card/cardSlice";
 
 export default configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+	reducer: {
+		columns,
+		cards
+	},
 });
